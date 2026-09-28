@@ -1,6 +1,6 @@
 {
-  "name": "Napoleon",
-  "short_name": "Napoleon",
+  "name": "Guess What",
+  "short_name": "Guess What",
   "description": "Raad het woord op je voorhoofd. Speel in landscape.",
   "start_url": "./index.html",
   "scope": "./",

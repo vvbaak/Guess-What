@@ -1,6 +1,6 @@
-# Heads Up! style mobile game
+# Guess What
 
-Een mobiele webapp voor iPhone en Safari die lokaal wordt gespeeld en als app op het beginscherm kan worden geplaatst.
+Een mobiele webapp (Heads Up-stijl) voor iPhone en Safari die lokaal en offline gespeeld kan worden en als app op het beginscherm kan worden geplaatst.
 
 ## Gebruik
 
@@ -17,13 +17,16 @@ python -m http.server 3000
 
 ## Gameplay
 
-- Kies `Kids` of `Volwassenen`
-- Start het spel
-- Houd de telefoon in portrait mode op je voorhoofd
-- Kantel de bovenkant naar beneden = goed, score +1
-- Kantel de onderkant naar boven = pas, geen score
-- Elke ronde duurt 90 seconden
+- Kies het aantal teams (2, 3 of 4) en geef elk team een naam en categorie (Kids of Volwassenen)
+- Kies de speeltijd (60/90/120 seconden)
+- Speel om de beurt: houd de telefoon in landscape op je voorhoofd
+- Druk op `Goed` voor een punt en het volgende woord, of `Pas` om over te slaan
+- Het eerste team dat 30 punten haalt, wint
 
-## Opmerking
+## Kenmerken
 
-Safari vraagt soms toestemming voor motion/orientation. De tilt-thresholds kunnen op verschillende telefoons iets afwijken; als nodig kun je die in `script.js` aanpassen.
+- Offline speelbaar (PWA met service worker)
+- Highscore per categorie, lokaal bewaard
+- Geluiden bij aftellen, Goed/Pas en winst
+- Scherm blijft aan tijdens het spelen (Wake Lock)
+- Geen woordherhaling binnen één spel
