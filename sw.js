@@ -1,4 +1,4 @@
-const CACHE = 'guesswhat-v10';
+const CACHE = 'guesswhat-v11';
 const ASSETS = [
   './',
   './index.html',

@@ -116,7 +116,7 @@ let lastTilt = null;
 let audioContext = null;
 
 function highscoreKey(mode) {
-  return `napoleon_highscore_${mode}`;
+  return `guesswhat_highscore_${mode}`;
 }
 
 function getHighscore(mode) {
