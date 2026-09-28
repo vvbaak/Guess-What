@@ -8,7 +8,20 @@ const MODE_WORDS = {
     'Trein', 'Boot', 'Tractor', 'Politie', 'Dokter', 'Tandarts', 'Kapper', 'Bakkerij', 'Snoep', 'Koekje',
     'Appel', 'Aardbei', 'Wortel', 'Paddenstoel', 'Vlinder', 'Bij', 'Lieveheersbeestje', 'Slak', 'Egel', 'Uil',
     'Paard', 'Koe', 'Schaap', 'Varken', 'Kip', 'Eend', 'Hond', 'Poes', 'Hamster', 'Papegaai',
-    'Voetbal', 'Schommel', 'Glijbaan', 'Zwembad', 'Strand', 'Zandkasteel', 'Sneeuwbal', 'Slee', 'Skelter', 'Step'
+    'Voetbal', 'Schommel', 'Glijbaan', 'Zwembad', 'Strand', 'Zandkasteel', 'Sneeuwbal', 'Slee', 'Skelter', 'Step',
+    'Dolfijn', 'Haai', 'Walvis', 'Zeester', 'Krab', 'Kreeft', 'Octopus', 'Zeepaardje', 'Schildpad', 'Kwal',
+    'Leeuw', 'Neushoorn', 'Nijlpaard', 'Kangoeroe', 'Koala', 'Panda', 'Wolf', 'Vos', 'Hert', 'Eekhoorn',
+    'Papegaai', 'Flamingo', 'Pauw', 'Zwaan', 'Ooievaar', 'Kraai', 'Merel', 'Mus', 'Specht', 'Vleermuis',
+    'Spin', 'Rups', 'Mier', 'Sprinkhaan', 'Libel', 'Mug', 'Worm', 'Kever', 'Vuurvlieg', 'Wesp',
+    'Appeltaart', 'Pannenkoek', 'Poffertjes', 'Patat', 'Hamburger', 'Ijshoorntje', 'Lolly', 'Chocolade', 'Popcorn', 'Marshmallow',
+    'Melk', 'Kaas', 'Brood', 'Ei', 'Yoghurt', 'Soep', 'Salade', 'Druif', 'Sinaasappel', 'Kers',
+    'Watermeloen', 'Ananas', 'Perzik', 'Peer', 'Framboos', 'Bosbes', 'Kiwi', 'Meloen', 'Pompoen', 'Komkommer',
+    'Tent', 'Kampvuur', 'Zaklamp', 'Verrekijker', 'Kompas', 'Vlieger', 'Bel', 'Fluit', 'Gitaar', 'Xylofoon',
+    'Kleurpotlood', 'Kwast', 'Schaar', 'Lijm', 'Stift', 'Gum', 'Liniaal', 'Rugzak', 'Schrift', 'Bord',
+    'Astronaut', 'Brandweerman', 'Zeeman', 'Cowboy', 'Indiaan', 'Tovenaar', 'Fee', 'Reus', 'Dwerg', 'Zeemeermin',
+    'Sneeuwpop', 'Slingers', 'Ballonnen', 'Taart', 'Kaarsjes', 'Cadeautje', 'Feesthoed', 'Confetti', 'Toeter', 'Discobal',
+    'Trampoline', 'Wip', 'Draaimolen', 'Reuzenrad', 'Achtbaan', 'Botsauto', 'Spookhuis', 'Suikerspin', 'Kermis', 'Dierentuin',
+    'Regenlaars', 'Paraplu', 'Wanten', 'Muts', 'Sjaal', 'Zonnebril', 'Pet', 'Zwemband', 'Emmer', 'Schepje'
   ],
   adults: [
     'Film', 'Boodschap', 'Piano', 'Laptop', 'Zwemmen', 'Aloha', 'Berg', 'Restaurant', 'Koffie', 'Vakantie',
@@ -20,7 +33,23 @@ const MODE_WORDS = {
     'Sushi', 'Pizza', 'Barbecue', 'Cocktail', 'Wijn', 'Kaasplank', 'Ontbijt', 'Picknick', 'Bakkerij', 'Markt',
     'Amsterdam', 'Parijs', 'Rome', 'Londen', 'Berlijn', 'Barcelona', 'New York', 'Tokio', 'Egypte', 'Safari',
     'Verhuizen', 'Solliciteren', 'Vergadering', 'Deadline', 'Presentatie', 'Belasting', 'Hypotheek', 'Verzekering', 'Files', 'Weekend',
-    'Bruidstaart', 'Verjaardag', 'Cadeau', 'Vuurwerk', 'Oudjaar', 'Sinterklaas', 'Halloween', 'Carnaval', 'Koningsdag', 'Zomer'
+    'Bruidstaart', 'Verjaardag', 'Cadeau', 'Vuurwerk', 'Oudjaar', 'Sinterklaas', 'Halloween', 'Carnaval', 'Koningsdag', 'Zomer',
+    'Winter', 'Herfst', 'Lente', 'Onweer', 'Sneeuwstorm', 'Mist', 'Hittegolf', 'Regenboog', 'Zonsondergang', 'Volle maan',
+    'Orkest', 'Dirigent', 'Ballerina', 'Opera', 'Musical', 'Cabaret', 'Circus', 'Goochelaar', 'Acrobaat', 'Jongleur',
+    'Schaken', 'Dammen', 'Pokeren', 'Darten', 'Bowlen', 'Biljarten', 'Kaarten', 'Puzzelen', 'Sudoku', 'Kruiswoord',
+    'Architect', 'Ingenieur', 'Boekhouder', 'Notaris', 'Makelaar', 'Kapper', 'Kok', 'Ober', 'Barman', 'Tuinman',
+    'Elektricien', 'Loodgieter', 'Timmerman', 'Schilder', 'Metselaar', 'Monteur', 'Lasser', 'Stukadoor', 'Dakdekker', 'Stratenmaker',
+    'Gitaar', 'Drumstel', 'Viool', 'Saxofoon', 'Trompet', 'Harp', 'Cello', 'Fluit', 'Accordeon', 'Basgitaar',
+    'Spaghetti', 'Lasagne', 'Risotto', 'Paella', 'Curry', 'Ramen', 'Taco', 'Burrito', 'Kebab', 'Falafel',
+    'Croissant', 'Baguette', 'Tiramisu', 'Cheesecake', 'Macaron', 'Éclair', 'Stroopwafel', 'Bitterbal', 'Kroket', 'Frikandel',
+    'Rugby', 'Volleybal', 'Basketbal', 'Handbal', 'Badminton', 'Tafeltennis', 'Schaatsen', 'Wielrennen', 'Roeien', 'Turnen',
+    'Klimmen', 'Kanoën', 'Paardrijden', 'Kickboksen', 'Judo', 'Karate', 'Schermen', 'Boogschieten', 'Zwemmen', 'Hardlopen',
+    'Venetië', 'Praag', 'Wenen', 'Madrid', 'Lissabon', 'Athene', 'Istanbul', 'Dubai', 'Sydney', 'Kaapstad',
+    'Vulkaan', 'Woestijn', 'Oerwoud', 'Waterval', 'Gletsjer', 'Koraalrif', 'Grot', 'Kliffen', 'Fjord', 'Kanaal',
+    'Telescoop', 'Microscoop', 'Kompas', 'Barometer', 'Thermometer', 'Kaars', 'Lantaarn', 'Ventilator', 'Stofzuiger', 'Wasmachine',
+    'Koelkast', 'Magnetron', 'Vaatwasser', 'Strijkijzer', 'Waterkoker', 'Broodrooster', 'Blender', 'Koffiezetapparaat', 'Naaimachine', 'Boormachine',
+    'Dokter', 'Verpleegster', 'Tandarts', 'Apotheker', 'Psycholoog', 'Fysiotherapeut', 'Diëtist', 'Opticien', 'Dierenarts', 'Vroedvrouw',
+    'Detective', 'Astronaut', 'Brandweer', 'Politie', 'Rechter', 'Leraar', 'Professor', 'Bibliothecaris', 'Postbode', 'Buschauffeur'
   ]
 };
 
@@ -44,7 +73,6 @@ const countdownEl = document.getElementById('countdown');
 const statusText = document.getElementById('statusText');
 const finalScore = document.getElementById('finalScore');
 const orientationNotice = document.getElementById('orientationNotice');
-const modeButtons = document.querySelectorAll('.mode-btn');
 const timerBox = document.querySelector('.timer-box');
 const finalDetail = document.getElementById('finalDetail');
 const finalRecord = document.getElementById('finalRecord');
@@ -56,6 +84,7 @@ const rulesModal = document.getElementById('rulesModal');
 const rulesCloseButton = document.getElementById('rulesCloseButton');
 const rulesDoneButton = document.getElementById('rulesDoneButton');
 const teamButtons = document.querySelectorAll('.team-btn');
+const teamConfig = document.getElementById('teamConfig');
 const teamTurnTitle = document.getElementById('teamTurnTitle');
 const standingsTurn = document.getElementById('standingsTurn');
 const standingsEnd = document.getElementById('standingsEnd');
@@ -64,12 +93,15 @@ const endTitle = document.getElementById('endTitle');
 
 const WIN_TARGET = 30;
 
-let selectedMode = 'kids';
 let selectedTime = 90;
 let teamCount = 2;
+let teamConfigs = [];
 let teams = [];
 let currentTeamIndex = 0;
+let currentMode = 'kids';
 let gameOver = false;
+let usedWords = { kids: new Set(), adults: new Set() };
+let wakeLock = null;
 let score = 0;
 let passCount = 0;
 let timeLeft = 90;
@@ -105,19 +137,37 @@ function setHighscore(mode, value) {
 
 function updateHighscoreDisplay() {
   if (homeHighscore) {
-    homeHighscore.textContent = `Highscore: ${getHighscore(selectedMode)}`;
+    homeHighscore.textContent = `Highscore \u2014 Kids: ${getHighscore('kids')} \u00b7 Volw.: ${getHighscore('adults')}`;
   }
 }
 
 function clearHighscore() {
   try {
-    localStorage.removeItem(highscoreKey(selectedMode));
+    localStorage.removeItem(highscoreKey('kids'));
+    localStorage.removeItem(highscoreKey('adults'));
   } catch (error) {
     // storage may be unavailable; ignore.
   }
   updateHighscoreDisplay();
   ensureAudioContext();
   playTone(300, 0.14, 0.24, 'sine');
+}
+
+async function requestWakeLock() {
+  try {
+    if ('wakeLock' in navigator) {
+      wakeLock = await navigator.wakeLock.request('screen');
+    }
+  } catch (error) {
+    // wake lock may be rejected; ignore.
+  }
+}
+
+function releaseWakeLock() {
+  if (wakeLock) {
+    wakeLock.release().catch(() => {});
+    wakeLock = null;
+  }
 }
 
 function openRules() {
@@ -194,14 +244,6 @@ function playTone(frequency, duration, volume, type = 'sine') {
   oscillator.stop(now + duration);
 }
 
-function setMode(mode) {
-  selectedMode = mode;
-  modeButtons.forEach((button) => {
-    button.classList.toggle('active', button.dataset.mode === mode);
-  });
-  updateHighscoreDisplay();
-}
-
 function setTime(seconds) {
   selectedTime = seconds;
   timeButtons.forEach((button) => {
@@ -209,11 +251,64 @@ function setTime(seconds) {
   });
 }
 
+function ensureTeamConfigs() {
+  for (let i = 0; i < teamCount; i += 1) {
+    if (!teamConfigs[i]) {
+      teamConfigs[i] = { name: `Team ${i + 1}`, mode: 'kids' };
+    }
+  }
+}
+
+function renderTeamConfig() {
+  if (!teamConfig) return;
+  ensureTeamConfigs();
+  teamConfig.innerHTML = '';
+
+  for (let i = 0; i < teamCount; i += 1) {
+    const config = teamConfigs[i];
+
+    const row = document.createElement('div');
+    row.className = 'team-config-row';
+
+    const input = document.createElement('input');
+    input.className = 'team-name-input';
+    input.type = 'text';
+    input.maxLength = 14;
+    input.value = config.name;
+    input.setAttribute('aria-label', `Naam team ${i + 1}`);
+    input.addEventListener('input', () => {
+      teamConfigs[i].name = input.value;
+    });
+
+    const toggle = document.createElement('div');
+    toggle.className = 'team-mode-toggle';
+
+    ['kids', 'adults'].forEach((mode) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'team-mode-btn';
+      button.textContent = mode === 'kids' ? 'Kids' : 'Volw.';
+      button.classList.toggle('active', config.mode === mode);
+      button.addEventListener('click', () => {
+        teamConfigs[i].mode = mode;
+        toggle.querySelectorAll('.team-mode-btn').forEach((other) => {
+          other.classList.toggle('active', other === button);
+        });
+      });
+      toggle.appendChild(button);
+    });
+
+    row.append(input, toggle);
+    teamConfig.appendChild(row);
+  }
+}
+
 function setTeams(count) {
   teamCount = count;
   teamButtons.forEach((button) => {
     button.classList.toggle('active', Number(button.dataset.teams) === count);
   });
+  renderTeamConfig();
 }
 
 function renderStandings(container) {
@@ -378,18 +473,24 @@ function fitWordText() {
   wordText.style.fontSize = `${size}rem`;
 }
 
+function drawWord() {
+  let pool = MODE_WORDS[currentMode].filter((word) => !usedWords[currentMode].has(word));
+  if (pool.length === 0) {
+    // All words used this game; reset the pool as a fallback so play can continue.
+    usedWords[currentMode].clear();
+    pool = MODE_WORDS[currentMode].slice();
+  }
+  const word = shuffle(pool)[0];
+  usedWords[currentMode].add(word);
+  return word;
+}
+
 function nextWord() {
   if (!isRunning) return;
 
-  if (currentIndex >= currentWords.length) {
-    currentWords = shuffle(MODE_WORDS[selectedMode]);
-    currentIndex = 0;
-  }
-
-  wordText.textContent = currentWords[currentIndex];
+  wordText.textContent = drawWord();
   fitWordText();
   wordCard.classList.remove('hidden');
-  currentIndex += 1;
 }
 
 function updateScore() {
@@ -424,7 +525,7 @@ function resetGame() {
   passCount = 0;
   timeLeft = selectedTime;
   currentIndex = 0;
-  currentWords = shuffle(MODE_WORDS[selectedMode]);
+  currentWords = [];
   scoreValue.textContent = '0';
   timerValue.textContent = String(selectedTime);
   if (timerBox) {
@@ -459,12 +560,16 @@ async function beginRound() {
 }
 
 function startMatch() {
+  ensureTeamConfigs();
   teams = [];
   for (let i = 0; i < teamCount; i += 1) {
-    teams.push({ name: `Team ${i + 1}`, score: 0 });
+    const config = teamConfigs[i];
+    const name = (config.name || '').trim() || `Team ${i + 1}`;
+    teams.push({ name, score: 0, mode: config.mode });
   }
   currentTeamIndex = 0;
   gameOver = false;
+  usedWords = { kids: new Set(), adults: new Set() };
   showTeamTurn();
 }
 
@@ -477,11 +582,13 @@ function showTeamTurn() {
 }
 
 async function startTurn() {
+  currentMode = teams[currentTeamIndex].mode;
   resetGame();
   showScreen(gameScreen);
   isRunning = true;
 
   ensureAudioContext();
+  requestWakeLock();
 
   if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
     if (!orientationPermissionGranted) {
@@ -511,6 +618,7 @@ function endGame() {
   startingRound = false;
   clearInterval(timerInterval);
   timerInterval = null;
+  releaseWakeLock();
 
   const team = teams[currentTeamIndex];
   if (team) {
@@ -526,10 +634,10 @@ function endGame() {
     finalDetail.textContent = `+${score} deze beurt \u00b7 ${passCount} gepast`;
   }
 
-  const previousBest = getHighscore(selectedMode);
+  const previousBest = getHighscore(currentMode);
   const isRecord = score > previousBest;
   if (isRecord) {
-    setHighscore(selectedMode, score);
+    setHighscore(currentMode, score);
   }
   if (finalRecord) {
     finalRecord.classList.toggle('hidden', !isRecord || score === 0);
@@ -585,10 +693,6 @@ function attachListeners() {
   document.addEventListener('pointerdown', unlockAudio, { once: true });
   document.addEventListener('touchend', unlockAudio, { once: true });
 
-  modeButtons.forEach((button) => {
-    button.addEventListener('click', () => setMode(button.dataset.mode));
-  });
-
   timeButtons.forEach((button) => {
     button.addEventListener('click', () => setTime(Number(button.dataset.time)));
   });
@@ -642,7 +746,14 @@ function attachListeners() {
     updateOrientationState();
   });
 
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible' && isRunning) {
+      requestWakeLock();
+    }
+  });
+
   syncViewportMetrics();
+  renderTeamConfig();
   updateHighscoreDisplay();
 }
 

@@ -355,6 +355,65 @@ h1 {
   transform: scale(0.98);
 }
 
+.team-config {
+  width: min(100%, 320px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.team-config-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.team-name-input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: rgba(148, 163, 184, 0.1);
+  color: var(--text);
+  font: inherit;
+  font-weight: 600;
+}
+
+.team-name-input:focus {
+  outline: none;
+  border-color: rgba(56, 189, 248, 0.7);
+  background: rgba(56, 189, 248, 0.1);
+}
+
+.team-mode-toggle {
+  display: flex;
+  gap: 4px;
+  background: rgba(148, 163, 184, 0.1);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 14px;
+  padding: 3px;
+  flex-shrink: 0;
+}
+
+.team-mode-btn {
+  border: none;
+  background: none;
+  color: var(--muted);
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.82rem;
+  padding: 7px 10px;
+  border-radius: 11px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.team-mode-btn.active {
+  background: rgba(56, 189, 248, 0.22);
+  color: #dff7ff;
+}
+
 .standings {
   width: min(100%, 320px);
   display: flex;

@@ -32,15 +32,7 @@
           <div class="home-badge" aria-hidden="true">🎭</div>
           <p class="eyebrow">Mobiele game</p>
           <h1>Napoleon</h1>
-          <p class="subtitle">Kies een categorie en houd de telefoon in landscape op je voorhoofd.</p>
-
-          <div class="setting-block">
-            <span class="setting-label">Categorie</span>
-            <div class="choice-group">
-              <button class="mode-btn active" data-mode="kids" type="button">Kids</button>
-              <button class="mode-btn" data-mode="adults" type="button">Volwassenen</button>
-            </div>
-          </div>
+          <p class="subtitle">Kies je instellingen en houd de telefoon in landscape op je voorhoofd.</p>
 
           <div class="setting-block">
             <span class="setting-label">Speeltijd</span>
@@ -60,7 +52,12 @@
             </div>
           </div>
 
-          <p id="homeHighscore" class="highscore-line">Highscore: 0</p>
+          <div class="setting-block">
+            <span class="setting-label">Teams</span>
+            <div id="teamConfig" class="team-config"></div>
+          </div>
+
+          <p id="homeHighscore" class="highscore-line">Highscore &mdash; Kids: 0 &middot; Volw.: 0</p>
 
           <button id="startButton" class="primary-btn" type="button">Start spel</button>
           <button id="rulesButton" class="secondary-btn" type="button">Spelregels</button>
